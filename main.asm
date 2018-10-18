@@ -9,9 +9,13 @@
     syscall
     addi $a0, $a0, 06  # s (115)
     syscall
-    sub $a0, $a0, 14   # e (101)   -------------Last Name End-----------------
+    sub $a0, $a0, 14   # e (101)
     syscall
-    addi $a0, $a0, 20   # y (121)   -------------First Name End-----------------
+    addi $a0, $a0, 20   # y (121)   -------------Last Name End-----------------
+    syscall
+    sub $a0, $a0, 77   # , (44)
+    syscall
+    sub $a0, $a0, 12   # SPACE (32)
     syscall
     #li $v0, 11
     #la $a0, 84        # T          ------------First Name Start----------------
