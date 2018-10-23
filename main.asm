@@ -21,6 +21,7 @@
     sub $a0, $a0, 5       # 1
     syscall
     addi $v0, $v0, 10
+    syscall
     addi $a0, $a0, 9      	# NewLine
     syscall
     la $a0, 82         # R          ------------Last Name Start----------------
